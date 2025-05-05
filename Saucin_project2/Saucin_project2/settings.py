@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Saucinapp',
-    'rest_frsmework',
+    'Saucinapp2',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'Saucin_project2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Saucindb',
+        'USER' : 'postgres',
+        'PASSWORD' : '#Ramees@683',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
     }
 }
 
